@@ -1,0 +1,271 @@
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-------------------------------- RESET --------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    background-color: #2c3e50;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    color: #579add;
+}
+ul{
+    list-style: none;
+}
+/*esse hack serve para ajustar a imagem dentro do box independente do tamanho da imagem ela ira se adaptar*/
+img{
+    max-width: 100%;
+}
+input, textarea{
+    border: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    background: #eeeeee;
+    font-family: 'Lato', sans-serif;
+    padding: 15px 5px;
+    font-size: 18px;
+
+}
+
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-------------------------------- GERAL --------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.row{
+    width: 100%;
+    float: left;
+} 
+.content{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*------------------------------- HEADER --------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.header{
+    padding: 30px 0;
+}
+
+/*---------------------------- HEADER LOGO ------------------------------*/
+.header-logo{
+    float: left;
+    position: relative;
+}
+.header-logo::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    background-color: #ffffff;
+    top: -30px;
+    left: 0;
+}
+.header-logo::before{
+    content: "";
+    position: absolute;
+    width: 37%;
+    height: 24px;
+    background-color: #579add;
+    top: -30px;
+    right: 0;
+    z-index: 2;
+}
+.header-logo h1 a{
+    font-size: 56px;
+    color: #ffffff;
+}
+.header-logo h1 a span{
+    color: #579add;
+}
+
+/*---------------------------- HEADER MENU ------------------------------*/
+.header-menu{
+    float: right;
+    padding: 9PX 0;
+    text-align: right;
+}
+.header-menu p{
+    color: #579add;
+    margin-bottom: 10px;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*----------------------------- BOAS VINDAS -----------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.boasvindas{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+
+.boasvindas h1{
+    color: #579add;
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.boasvindas p{
+    margin-bottom: 20px;
+}
+.boasvindas p a{
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+.boasvindas p a:hover{
+    background-color: #476380;
+    color: #e7e7e7;
+    border-color: #e7e7e7;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*----------------------------- TECNOLOGIAS -----------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.tecnologias{
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+.tecnologias-title{
+    font-size: 22px;
+    color: #579add;
+    border-bottom: 4px solid;
+    border-color: #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.tecnologias-title span{
+    border-bottom: 4px solid;
+    border-color: #579add;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.tecnologias-col{
+    float: left;
+    width: 30.66%;
+    margin-right: 4%;
+    
+}
+.tecnologias-col:last-child{
+    margin-right: 0;
+}
+.tecnologias-col:hover .cover img{
+        transform: scale(1.2);
+}
+.tecnologias-col .cover{
+    height: 184px;
+    overflow: hidden;
+}
+.tecnologias-col img{
+    transition: all .20s ease;
+}
+
+.tecnologias-col h2{
+    color: #333333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.tecnologias-col p{
+     text-align: justify;
+}
+.tecnologias-col a{
+    color: #999999;
+}
+.tecnologias-col a:hover{
+    color: #579add;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*------------------------------ CONTATO --------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.contato{
+    padding: 30px 0;
+    background-color: #2c3e50;
+}
+.contato h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #579add;
+    font-size: 40px;
+    font-weight: normal;   
+}
+
+.contato-col{
+    width: 48%;
+    float: left;
+}
+.contato-col:nth-child(2){
+    float: right;
+}
+.contato-col label{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contato-col label span{
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.contato-col label input, .contato-col label textarea{
+    float: left;
+    width: 100%;
+}
+.contato-col label textarea{
+    height: 154px;
+}
+.contato p{
+    float: left;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}
+.contato p input{
+    color: #ffffff;
+    background-color: #2c3e50;
+    width: 150px;
+}
+.contato p input:hover{
+    color: #c9c7c7;
+    background-color: #476380;
+    width: 150px;
+    cursor: pointer;
+}
+
+
